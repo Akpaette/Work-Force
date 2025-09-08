@@ -1,0 +1,100 @@
+Build a modern, secure, and user-friendly web or mobile application for the collation and management of staff records within an organization.
+
+✅ Core Concept
+The app should function like a digital folder system where each folder represents a staff member. Each folder contains multiple “files” (tabs or sections) holding extensive staff details such as personal info, work history, credentials, disciplinary records, leave history, etc.
+
+✨ Key Features
+Modern UI/UX
+
+Clean, intuitive dashboard with dark/light mode toggle
+
+Search bar at the top for quick staff lookup by Registration Number
+
+Folder-style navigation to simulate physical files
+
+Responsive across devices
+
+Secure Staff Profiles
+
+Each staff profile/file is PIN-protected
+
+PIN must be input before accessing individual data
+
+Option to reset or update PIN by authorized admin
+
+Search & Filter Functionality
+
+Smart global search by Registration Number, name, department, or role
+
+Sort and filter options (e.g., by date of registration, department, rank)
+
+Staff Registration Form
+
+A comprehensive onboarding form capturing:
+
+Full name, photo, gender, contact info
+
+Department, rank, employment type, date of joining
+
+Educational background, certifications, work history
+
+Emergency contact
+
+Documents upload (PDF, DOC, JPG, PNG)
+
+Admin & Role Permissions
+
+Admin dashboard to create/manage users
+
+Only authorized roles can:
+
+View/edit/delete staff profiles
+
+Reset PINs
+
+Generate reports
+
+File Attachments
+
+Each staff file can have attached documents and images
+
+Tags and categories for attachments
+
+Search Logs & Access Tracking
+
+Log all access attempts (successful and failed)
+
+Display recent views and edits per profile
+
+🔐 Security & Privacy
+AES-encryption or similar for sensitive data
+
+Two-factor authentication for admins
+
+Role-based access control (RBAC)
+
+Secure backend API with token-based authentication
+
+⚙️ Tech Suggestions (Optional)
+Frontend: React (web) or Flutter (cross-platform mobile)
+
+Backend: Node.js / Django / Laravel
+
+Database: PostgreSQL / MongoDB
+
+Authentication: Supabase Auth / Firebase Auth
+
+Storage: AWS S3 / Firebase Storage
+
+Deployment: Vercel / Netlify / DigitalOcean
+
+🧪 Bonus Features (for an exceptional experience)
+PDF export of staff files
+
+Cloud backup & recovery options
+
+Auto-logout after inactivity
+
+Voice or biometric authentication (optional)
+
+Chat-like comments or notes for HR/admins

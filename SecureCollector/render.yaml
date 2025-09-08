@@ -1,0 +1,28 @@
+services:
+  # Web Service (Full-stack Node.js app)
+  - type: web
+    name: securecollector
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/stats
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    domains:
+      - securecollector.onrender.com
+
+databases:
+  # PostgreSQL Database
+  - name: securecollector-db
+    databaseName: securecollector
+    user: securecollector_user
+    plan: free
+
+# Environment variables to be set manually in Render dashboard:
+# DATABASE_URL - Will be auto-generated when you connect the database
+# ENCRYPTION_KEY - Generate with: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+# SESSION_SECRET - Generate with: node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
